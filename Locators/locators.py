@@ -1,0 +1,51 @@
+class Locators:
+    # login page objects
+    username_textbox_xpath = '//input[@class="form-control site-version_ru"]'
+    password_textbox_name = 'password'
+    login_button_link_xpath = '//button[@class="btn btn-full btn-default btn-bold"]'
+    invalidUsername_message_xpath = '//div[@class="form-line auth-result"]'
+    invalidPassword_message_xpath = '//div[@class="form-line auth-result"]'
+    invalidUsernameAndPassword_xpath = '//div[@class="form-line auth-result"]'
+
+    # home page objects
+    welcome_xpath = '//div[@class="personal-info__greeting"]'
+    click_my_orders_xpath = '//a[@href="#orders"]'
+    click_my_favorite_xpath = '//a[@href="#favorites"]'
+    click_personal_data_xpath = '//a[@class="js-lk-personal-tab"]'
+    register_card_xpath = '//a[@class="js-register-card-show"]'
+    edit_personal_data_css_selector = "#home > div:nth-child(1) > div > div.personal-info__client > a"
+    contact_info_css_selector = "#personal_form > div:nth-child(6)"
+    address_info_message_css_selector = "#personal_form > div:nth-child(7) > h5.uppercase"
+    subscribe_message_css_selector = "#personal_form > div:nth-child(7) > h5:nth-child(4)"
+    subscribe_email_message_xpath = '//label[@for="emailSubscribe"]'
+    subscribe_sms_message_xpath = '//label[@for="smsSubscribe"]'
+    change_password_link_text = 'ИЗМЕНИТЬ ПАРОЛЬ'
+    old_password_name = 'UF_TEMP_PASS'
+    new_password_name = 'NEW_PASSWORD'
+    confirmation_new_password_name = 'NEW_PASSWORD_CONFIRM'
+    save_changes_name = 'save'
+    basket_xpath = '//*[@id="basketCounter"]'
+    catalog_products_xpath = '//nav[@class="catalog-nav"]'
+
+    exit_link_text = 'Выход'
+    new_products_xpath = '//*[@id="menu"]/div/span[5]/a'
+    sale_xpath = '//*[@id="menu"]/div/span[6]/a'
+    discounts_and_bonuses_xpath = '//*[@id="menu"]/div/span[7]/a'
+    payment_and_delivery_xpath = '//*[@id="menu"]/div/span[8]/a'
+    hurry_up_xpath = '//*[@id="menu"]/div/span[9]/a'
+    contacts_xpath = '//*[@id="menu"]/div/span[10]/a'
+    airsoft_guns_xpath = '//*[@id="menu"]/div/div/div/ul/li[1]/a'
+    all_guns_xpath = '//*[@id="left_box"]/div[1]/div[2]/div[3]/a[4]'
+    pyrotechnics_xpath = '//*[@id="menu"]/div/div/div/ul/li[4]/a'
+    all_guns_xpath_2 = '//*[@id="left_box"]/div[1]/div[2]/div[3]/a[4]'
+    link_vk_xpath = '//*[@id="content-left"]/div[2]/a[1]'
+    link_facebook_xpath = '//*[@id="content-left"]/div[2]/a[2]'
+    link_twitter_xpath = '//*[@id="content-left"]/div[2]/a[3]'
+    link_instagram_xpath = '//*[@id="content-left"]/div[2]/a[4]'
+    link_youtube_xpath = '//*[@id="content-left"]/div[2]/a[5]'
+    link_telegram_bot_xpath = '//*[@id="content-left"]/div[2]/a[6]'
+    email_us_css_selector = '#footer > div.center > div.office > div > div.call-back-footer > a'
+    close_the_form_css_selector = 'body > div.fancybox-wrap.fancybox-desktop.fancybox-type-iframe.fancybox-opened > div > div.fancybox-item.fancybox-close'
+    articles_xpath = '//*[@id="footer"]/div[1]/div[2]/ul/li[4]/a'
+    top_logo_css_selector = '#logo > a'
+    button_buy_vint1_xpath = '//*[@id="indicator_catalog"]/div[1]/div[1]/div/button[1]'
