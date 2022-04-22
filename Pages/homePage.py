@@ -26,30 +26,35 @@ class HomePage:
         self.click_save_changes_name = Locators.save_changes_name
         self.click_basket_xpath = Locators.basket_xpath
         self.catalog_products_xpath = Locators.catalog_products_xpath
+        self.spets_tsena_po_karte_xpath = Locators.spets_tsena_po_karte_xpath
+        self.click_add_to_basket_xpath = Locators.click_add_to_basket_xpath
+        self.click_delete_xpath = Locators.click_delete_xpath
+        self.click_search_xpath = Locators.click_search
+        self.click_search_button_xpath = Locators.click_search_button
+        self.click_adress_shop_xpath = Locators.click_adress_shop
+        self.click_promotion_xpath = Locators.click_promotion
+        self.click_card_fix_price_xpath = Locators.click_card_fix_price
+        self.click_Pickup_store_xpath = Locators.click_Pickup_store
+        self.click_good_deeds_xpath = Locators.click_good_deeds
+        self.click_work_with_us_css_selector = Locators.click_work_with_us
+        self.click_work_with_us_sklad_css_selector = Locators.click_work_with_us_sklad_css_selector
+        self.click_work_with_us_in_office_css_selector = Locators.click_work_with_us_in_office_css_selector
+        self.link_vk_xpath = Locators.link_vk_xpath
+        self.link_tiktok_xpath = Locators.link_tiktok_xpath
+        self.click_link_odnoklassniki_xpath = Locators.link_odnoklassniki
+        self.link_telegram_bot_xpath = Locators.link_telegram_bot_xpath
+        self.link_youtube_xpath = Locators.link_youtube_xpath
+        self.email_us_link_text = Locators.email_us_link_text
+        self.close_the_form_link_text = Locators.close_the_form_link_text
+        self.exit_xpath = Locators.exit_xpath
+        self.click_android_xpath = Locators.click_android_xpath
+        self.click_Ios_xpath = Locators.click_Ios
+        self.click_map_page_xpath = Locators.click_map_page_xpath
+        self.click_top_logo_xpath = Locators.click_top_logo
 
 
-        # self.exit_link_text = Locators.exit_link_text
-        # self.new_products_xpath = Locators.new_products_xpath
-        # self.sale_xpath = Locators.sale_xpath
-        # self.discounts_and_bonuses_xpath = Locators.discounts_and_bonuses_xpath
-        # self.payment_and_delivery_xpath = Locators.payment_and_delivery_xpath
-        # self.hurry_up_xpath = Locators.hurry_up_xpath
-        # self.contacts_xpath = Locators.contacts_xpath
-        # self.airsoft_guns_xpath = Locators.airsoft_guns_xpath
-        # self.all_guns_xpath = Locators.all_guns_xpath
-        # self.pyrotechnics_xpath = Locators.pyrotechnics_xpath
-        # self.all_guns_xpath_2 = Locators.all_guns_xpath_2
-        # self.link_vk_xpath = Locators.link_vk_xpath
-        # self.link_facebook_xpath = Locators.link_facebook_xpath
-        # self.link_twitter_xpath = Locators.link_twitter_xpath
-        # self.link_instagram_xpath = Locators.link_instagram_xpath
-        # self.link_youtube_xpath = Locators.link_youtube_xpath
-        # self.link_telegram_bot_xpath = Locators.link_telegram_bot_xpath
-        # self.email_us_css_selector = Locators.email_us_css_selector
-        # self.close_the_form_css_selector = Locators.close_the_form_css_selector
-        # self.articles_xpath = Locators.articles_xpath
-        # self.top_logo_css_selector = Locators.top_logo_css_selector
-        # self.button_buy_vint1_xpath = Locators.button_buy_vint1_xpath
+
+
 
     def check_welcome_message(self):
         msg = self.driver.find_element(By.XPATH, self.welcome_xpath).text
@@ -109,78 +114,92 @@ class HomePage:
     def click_save_changes(self):
         self.driver.find_element(By.NAME, self.click_save_changes_name).click()
 
+    def click_catalog_products(self):
+        self.driver.find_element(By.XPATH, self.catalog_products_xpath).click()
+
+    def click_spets_tsena_po_karte(self):
+        self.driver.find_element(By.XPATH, self.spets_tsena_po_karte_xpath).click()
+
     def click_basket(self):
         self.driver.find_element(By.XPATH, self.click_basket_xpath).click()
 
-    def click_catalog_products(self):
-        self.driver.find_element(By.XPATH, self.catalog_products_xpath).click()
-    #
-    # def click_exit(self):
-    #     self.driver.find_element(By.LINK_TEXT, self.exit_link_text).click()
-    #
+    def click_add_to_basket(self):
+        self.driver.find_element(By.XPATH, self.click_add_to_basket_xpath).click()
+
+    def click_delete(self):
+        self.driver.find_element(By.XPATH, self.click_delete_xpath).click()
+
+    def click_search(self):
+        self.driver.find_element(By.XPATH, self.click_search_xpath).clear()
+        self.driver.find_element(By.XPATH, self.click_search_xpath)
+
+    def click_search_button(self):
+        self.driver.find_element(By.XPATH, self.click_search_button_xpath).click()
+
+    def click_adress_shop(self):
+        self.driver.find_element(By.XPATH, self.click_adress_shop_xpath).click()
+
+    def click_promotion(self):
+        self.driver.find_element(By.XPATH, self.click_promotion_xpath).click()
+
+    def click_card_fix_price(self):
+        self.driver.find_element(By.XPATH, self.click_card_fix_price_xpath).click()
+
+    def click_Pickup_store(self):
+        self.driver.find_element(By.XPATH, self.click_Pickup_store_xpath).click()
+
+    def click_good_deeds(self):
+        self.driver.find_element(By.XPATH, self.click_good_deeds_xpath).click()
+
+    def click_work_with_us(self):
+        self.driver.find_element(By.CSS_SELECTOR, self.click_work_with_us_css_selector).click()
+
+    def click_work_with_us_sklad(self):
+        self.driver.find_element(By.CSS_SELECTOR, self.click_work_with_us_sklad_css_selector).click()
+
+    def click_work_with_us_in_office(self):
+        self.driver.find_element(By.CSS_SELECTOR, self.click_work_with_us_in_office_css_selector).click()
+
+
+    def click_link_vk(self):
+        self.driver.find_element(By.XPATH, self.link_vk_xpath).click()
+
+    def click_link_tiktok(self):
+        self.driver.find_element(By.XPATH, self.link_tiktok_xpath).click()
+
+    def click_link_odnoklassniki(self):
+        self.driver.find_element(By.XPATH, self.click_link_odnoklassniki_xpath).click()
+
+    def click_link_telegram_bot(self):
+        self.driver.find_element(By.XPATH, self.link_telegram_bot_xpath).click()
+
+    def click_link_youtube(self):
+        self.driver.find_element(By.XPATH, self.link_youtube_xpath).click()
+
+    def click_email_us(self):
+        self.driver.find_element(By.LINK_TEXT, self.email_us_link_text).click()
+
+    def click_close_the_form(self):
+        self.driver.find_element(By.LINK_TEXT, self.close_the_form_link_text).click()
+
+    def click_exit(self):
+        self.driver.find_element(By.XPATH, self.exit_xpath).click()
+
+    def click_android(self):
+        self.driver.find_element(By.XPATH, self.click_android_xpath).click()
+
+    def click_Ios(self):
+        self.driver.find_element(By.XPATH, self.click_Ios_xpath).click()
+
+    def click_map_page(self):
+        self.driver.find_element(By.XPATH, self.click_map_page_xpath).click()
+
+    def click_top_logo(self):
+        self.driver.find_element(By.XPATH, self.click_top_logo_xpath).click()
 
 
 
-    #
-    # def click_new_products(self):
-    #     self.driver.find_element(By.XPATH, self.new_products_xpath).click()
-    #
-    # def click_sale(self):
-    #     self.driver.find_element(By.XPATH, self.sale_xpath).click()
-    #
-    # def click_discounts_and_bonuses(self):
-    #     self.driver.find_element(By.XPATH, self.discounts_and_bonuses_xpath).click()
-    #
-    # def click_payment_and_delivery(self):
-    #     self.driver.find_element(By.XPATH, self.payment_and_delivery_xpath).click()
-    #
-    # def click_hurry_up(self):
-    #     self.driver.find_element(By.XPATH, self.hurry_up_xpath).click()
-    #
-    # def click_contacts(self):
-    #     self.driver.find_element(By.XPATH, self.contacts_xpath).click()
-    #
-    # def click_airsoft_guns(self):
-    #     self.driver.find_element(By.XPATH, self.airsoft_guns_xpath).click()
-    #
-    # def click_all_guns(self):
-    #     self.driver.find_element(By.LINK_TEXT, self.all_guns_xpath).click()
-    #
-    # def click_pyrotechnics(self):
-    #     self.driver.find_element(By.XPATH, self.pyrotechnics_xpath).click()
-    #
-    # def click_all_guns_2(self):
-    #     self.driver.find_element(By.XPATH, self.all_guns_xpath_2).click()
-    #
-    # def click_link_vk(self):
-    #     self.driver.find_element(By.XPATH, self.link_vk_xpath).click()
-    #
-    # def click_link_facebook(self):
-    #     self.driver.find_element(By.XPATH, self.link_facebook_xpath).click()
-    #
-    # def click_link_twitter(self):
-    #     self.driver.find_element(By.XPATH, self.link_twitter_xpath).click()
-    #
-    # def click_link_instagram(self):
-    #     self.driver.find_element(By.XPATH, self.link_instagram_xpath).click()
-    #
-    # def click_link_youtube(self):
-    #     self.driver.find_element(By.XPATH, self.link_youtube_xpath).click()
-    #
-    # def click_link_telegram_bot(self):
-    #     self.driver.find_element(By.XPATH, self.link_telegram_bot_xpath).click()
-    #
-    # def click_email_us(self):
-    #     self.driver.find_element(By.CSS_SELECTOR, self.email_us_css_selector).click()
-    #
-    # def click_close_the_form(self):
-    #     self.driver.find_element(By.CSS_SELECTOR, self.close_the_form_css_selector).click()
-    #
-    # def click_articles(self):
-    #     self.driver.find_element(By.XPATH, self.articles_xpath).click()
-    #
-    # def click_top_logo(self):
-    #     self.driver.find_element(By.CSS_SELECTOR, self.top_logo_css_selector).click()
-    #
-    # def click_button_buy_vint1(self):
-    #     self.driver.find_element(By.XPATH, self.button_buy_vint1_xpath).click()
+
+
+
+
